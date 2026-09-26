@@ -28,7 +28,7 @@ cfg-if = "1"
 
 # toyos
 [target.'cfg(target_os = "toyos")'.dependencies]
-toyos-abi = "0.1"
+toyos-abi = "0.12"
 
 # getrandom / linux_android_with_fallback
 [target.'cfg(all(any(target_os = "linux", target_os = "android"), not(any(all(target_os = "linux", target_env = ""), getrandom_backend = "custom", getrandom_backend = "linux_raw", getrandom_backend = "rdrand", getrandom_backend = "rndr"))))'.dependencies]
